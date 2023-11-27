@@ -1,0 +1,2 @@
+# Beed.o - Frontend
+

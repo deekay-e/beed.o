@@ -23,6 +23,7 @@ class BaseModel:
         created_at = Column(DateTime, default=datetime.utcnow)
         updated_at = Column(DateTime, default=datetime.utcnow,
             onupdate=datetime.utcnow)
+
     def __init__():
         ''' Initialize the Base model '''
         if kwargs:
@@ -43,3 +44,5 @@ class BaseModel:
             self.id = str(uuid4())
             self.created_at = datetime.utcnow()
             self.updated_at = self.created_at
+
+
